@@ -5,7 +5,7 @@
 body {
 	display: grid;
 	grid-template-columns: auto;
-	background-image: url('https://source.unsplash.com/collection/190727/1600x900');
+	background-image: url('https://source.unsplash.com/collection/190727/1600x900');  /*adding this url for random unsplash image in frontpage*/
 	  /* Full height */
 	  height: 100%; 
 
