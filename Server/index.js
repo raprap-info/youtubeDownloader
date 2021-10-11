@@ -4,6 +4,7 @@ const ytdl = require('ytdl-core');
 const app = express();
 const PORT = 4000;
 
+
 app.use(cors());
 
 app.listen(PORT, () => {
@@ -19,7 +20,7 @@ app.get('/downloadmp3', async (req, res, next) => {
 		let title = 'audio';
 
 		await ytdl.getBasicInfo(url, {
-			format: 'mp4'
+			format: 'mp3'
 		}, (err, info) => {
 			if (err) throw err;
 			title = info.player_response.videoDetails.title.replace(/[^\x00-\x7F]/g, "");
@@ -33,7 +34,10 @@ app.get('/downloadmp3', async (req, res, next) => {
 
 	} catch (err) {
 		console.error(err);
+	
 	}
+
+
 });
 
 app.get('/downloadmp4', async (req, res, next) => {
