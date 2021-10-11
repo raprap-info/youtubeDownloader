@@ -1,7 +1,7 @@
 let Btn = document.getElementById('btn');
 let URLinput = document.querySelector('.URL-input');
 let select = document.querySelector('.opt');
-let serverURL = 'http://192.168.0.172:4000'; //Changing and Adding my local Ip address to use locally 
+let serverURL = 'http://192.168.0.172:4000'; //Changing and Adding my local Ip address to use locally: change this to localhost or 127.0.0.1 if you want to use only by you.
 
 Btn.addEventListener('click', () => {
 	if (!URLinput.value) {
